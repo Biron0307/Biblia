@@ -1,0 +1,104 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background-color: #F5F0E6; /* color tierra claro */
+    color: #3E2F1C; /* color texto oscuro */
+}
+
+/* Header */
+header {
+    background-color: #8B6D5C; /* marrón tierra */
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* adaptable a móviles */
+}
+
+header nav ul li {
+    margin: 5px 10px;
+}
+
+header nav ul li a {
+    color: #F5F0E6; /* color claro */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Cuadros de contenido */
+.cuadro-grande {
+    background-color: #D9C3A6; /* beige tierra */
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(62, 47, 28, 0.3);
+}
+
+.centro {
+    text-align: center;
+}
+
+/* Contenido de Viejo y Nuevo Testamento */
+.contenido {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* para que se adapten en celular */
+}
+
+.testamento {
+    flex: 1 1 300px; /* se ajusta según el espacio */
+    max-width: 400px;
+}
+
+/* Botones */
+.boton-cuadro {
+    background-color: #8B6D5C; /* marrón tierra */
+    color: #F5F0E6; /* color claro */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.boton-cuadro:hover {
+    background-color: #A5836F; /* marrón más claro al pasar el mouse */
+}
+
+/* Footer */
+footer {
+    background-color: #8B6D5C; /* marrón tierra */
+    color: #F5F0E6;
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 20px;
+}
+
+/* Responsive para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .cuadro-grande {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .boton-cuadro {
+        padding: 12px 0;
+    }
+}
